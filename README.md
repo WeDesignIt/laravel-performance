@@ -7,9 +7,12 @@ This performance package (currently) contains two configurable performance relat
 
 ## Include the package
 
-For dev-only use:
+For dev-only (be sure to read the note below) use:
 
 `composer require --dev wedesignit/laravel-performance`
+
+!! Note that if you use the `ContainsUnEagerLoadableRelations` trait in your code, this will cause errors in 
+production. You might want to require the package (without `--dev`) !!
 
 For using it on other environments too:
 
